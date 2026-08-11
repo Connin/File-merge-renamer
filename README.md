@@ -2,7 +2,7 @@ File Merge
 
 A simple Python desktop application that merges files from multiple folders into a single folder and renames them sequentially.
 
-Features
+## Features
 Select multiple folders using a Tkinter file dialog
 Display selected folder paths in the UI
 Sort files using natural sorting
@@ -53,16 +53,19 @@ Send2Trash
 Install the required packages:
 
 pip install natsort send2trash
-Usage
-Run the Python script.
-Click Select Folder and choose a folder.
-Additional folder selection rows will appear automatically.
-Select all folders you want to merge.
-Enter a name for the new output folder.
-Optionally check Delete original folders after merge.
-Click Merge.
-The files will be copied to the new folder and renamed sequentially.
-Safety
+
+## Usage
+
+1. Run the Python script.
+2. Click **Select Folder** and choose a folder.
+3. Additional folder selection rows will appear automatically.
+4. Select all folders you want to merge.
+5. Enter a name for the new output folder.
+6. Optionally check **Delete original folders after merge**.
+7. Click **Merge**.
+8. The files will be copied to the new folder and renamed sequentially.
+
+## Safety
 
 The application uses shutil.copy2() to copy files so the original files are not modified during the merge.
 
@@ -72,9 +75,10 @@ If Delete original folders after merge is enabled, the original folders are move
 
 ![File Merge Screenshot](images/file-merge-screenshot.png)
 
-Libraries Used
-os — file and path operations
-shutil — file copying
-tkinter — graphical user interface
-natsort — natural file sorting
-send2trash — safely moving original folders to the Recycle Bin
+## Libraries Used
+
+- `os` — File and path operations
+- `shutil` — File copying
+- `tkinter` — Graphical user interface
+- `natsort` — Natural file sorting
+- `send2trash` — Safely moves original folders to the Recycle Bin
