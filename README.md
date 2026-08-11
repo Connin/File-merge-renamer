@@ -66,6 +66,21 @@ pip install natsort send2trash
 7. Click **Merge**.
 8. The files will be copied to the new folder and renamed sequentially.
 
+## Output Location
+
+The merged folder is created in the parent directory of the first selected folder.
+
+## For example:
+
+First selected folder:
+C:\Users\kyle\Desktop\Folder1
+
+Output folder name:
+Merged
+
+Created folder:
+C:\Users\kyle\Desktop\Merged
+
 ## Safety
 
 The application uses shutil.copy2() to copy files so the original files are not modified during the merge.
