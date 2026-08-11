@@ -20,6 +20,7 @@ How It Works
 
 For example, if the selected folders contain:
 
+```text
 Folder1
 ├── image_1.jpg
 ├── image_2.jpg
@@ -28,15 +29,18 @@ Folder1
 Folder2
 ├── photo_1.jpg
 └── photo_2.jpg
+```
 
 The program creates a new folder containing:
 
+```text
 Merged
 ├── 1.jpg
 ├── 2.jpg
 ├── 3.jpg
 ├── 4.jpg
 └── 5.jpg
+```
 
 Files are processed using natural sort order.
 
@@ -63,6 +67,10 @@ Safety
 The application uses shutil.copy2() to copy files so the original files are not modified during the merge.
 
 If Delete original folders after merge is enabled, the original folders are moved to the Windows Recycle Bin using send2trash() only after the merge completes successfully.
+
+## Example Screenshot
+
+![File Merge Screenshot](images/file-merge-screenshot.png)
 
 Libraries Used
 os — file and path operations
