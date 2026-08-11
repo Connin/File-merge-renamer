@@ -1,4 +1,4 @@
-File Merge
+## File Merge
 
 A simple Python desktop application that merges files from multiple folders into a single folder and renames them sequentially.
 
@@ -16,7 +16,8 @@ Rename copied files sequentially:
 Prevent creation of an output folder if the same folder name already exists
 Optionally move the original folders to the Recycle Bin after a successful merge
 Reset the selected folders and UI
-How It Works
+
+## How It Works
 
 For example, if the selected folders contain:
 
